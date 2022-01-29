@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html >
+<html lang="ru" dir="ltr">
+<html>
+  <head>
+    <title>Логистическая компания</title>
+    <link href="{% static 'main/style.css'%}" rel="stylesheet">
+  </head>
+  <body>
+    <div style="position:absolute; bottom: 3.5px; left: 3.5px;">&copy; Права защищены 2021-2022 </div>
+    <body>
+      <a class = "button1a" href="about.html"> <img src="https://img.icons8.com/ultraviolet/2x/info.png"> </a>
+    </body>
+    <div class="content">
+      <form class="input" action="main.html" method="post">
+        <div class="container">
+        <div class="demo-flex-spacer"></div>
+        <div class="webflow-style-input">
+          {%csrf_token%}
+          <input name = "inputkey" class="" type="password" placeholder="{{placeholder}}"></input>
+          <button type="submit"><i class="icon ion-android-arrow-forward"></i></button>
+        </div>
+        <div class="demo-flex-spacer"></div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
